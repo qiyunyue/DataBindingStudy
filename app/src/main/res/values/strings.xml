@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DataBindingStudy</string>
+    <string name="selected_true">true</string>
+    <string name="selected_false">false</string>
 </resources>
