@@ -37,5 +37,11 @@
                 android:checked="@{viewModel.mCheckStatus}"
                 android:onClick="@{()->viewModel.setCheckStatus(viewModel.mCheckStatus?1:2)}"
                 android:text="@{viewModel.mCheckStatus?@string/selected_true:@string/selected_false}"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
         </LinearLayout>
 </layout>
