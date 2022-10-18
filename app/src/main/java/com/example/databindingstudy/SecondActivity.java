@@ -10,6 +10,9 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ProgressBar;
+
+import com.example.databindingstudy.util.MyAsyncTask;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -45,6 +48,19 @@ public class SecondActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
+        //4、
+        pg_bar = findViewById(R.id.pg_bar);
+        btn_download = findViewById(R.id.btn_download);
+        btn_download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MyAsyncTask myAsyncTask = new MyAsyncTask(pg_bar);
+                myAsyncTask.execute(1000);
+            }
+        });
+
     }
 
     @Override
@@ -53,4 +69,8 @@ public class SecondActivity extends AppCompatActivity {
         Log.i("hehe","Activity的onKeyDown方法被调用");
         return false;
     }
+
+    //4、
+    private ProgressBar pg_bar;
+    private Button btn_download;
 }

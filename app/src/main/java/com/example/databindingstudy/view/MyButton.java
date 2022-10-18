@@ -1,4 +1,4 @@
-package com.example.databindingstudy;
+package com.example.databindingstudy.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

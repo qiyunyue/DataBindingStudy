@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".SecondActivity">
 
-    <com.example.databindingstudy.MyButton
+    <com.example.databindingstudy.view.MyButton
         android:id="@+id/btn_my"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,4 +20,21 @@
         android:fadeScrollbars="false"
         android:scrollbarStyle="outsideOverlay"
         android:gravity="center" />
+    <com.example.databindingstudy.view.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"/>
+
+
+    <ProgressBar
+        android:id="@+id/pg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始下载"
+        />
 </LinearLayout>
